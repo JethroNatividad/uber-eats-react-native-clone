@@ -15,7 +15,7 @@ export default function HeaderTabs() {
 function Button({ children, isActive, onPress }) {
     const styles = {
         touchableOpacity: { backgroundColor: isActive ? 'black' : 'white', paddingHorizontal: 16, paddingVertical: 6, borderRadius: 25, fontWeight: '900' },
-        text: { color: isActive ? 'white' : 'black', fontSize: 15 }
+        text: { color: isActive ? 'white' : 'black', fontSize: 15, fontWeight: 'bold', letterSpacing: 1.5 }
     }
     return (
         <TouchableOpacity style={styles.touchableOpacity} onPress={onPress}>
